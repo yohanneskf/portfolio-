@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,rgb(243, 238, 238),rgb(118, 108, 108));
+}
+header{
+    display: flex;
+    justify-content:space-between ;
+    color: rgb(144, 185, 250);
+    padding: 30px 50px;
+    background: grey;
+}
+header h2{
+    letter-spacing: 1.5px;
+}
+header nav a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    background: rgba(255, 255, 255,0.1);
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home img{
+    height: 250px;
+    width: 250px;
+    margin: 25px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 5px 5px 10px #faf6e0,
+                -5px -5px 10px #faf6e0,
+                5px -5px 10px #faf6e0,
+                -5px 5px 10px #faf6e0;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-name: light;
+            
+}
+@keyframes light{
+    0%{
+
+    }
+    20%{
+        box-shadow: 7px 7px 10px #faf6e0,
+                -7px -7px 10px #faf6e0,
+                7px -7px 10px #faf6e0,
+                -7px 7px 10px  #faf6e0;
+    }
+    40%{
+        box-shadow: 9px 9px 10px #faf6e0,
+                -9px -9px 10px #faf6e0,
+                9px -9px 10px #faf6e0,
+                -9px 9px 10px #faf6e0;
+    }
+    60%{
+        box-shadow: 11px 11px 10px #faf6e0,
+                -11px -11px 5px10px #faf6e0,
+                11px -11px 5px 10px #faf6e0,
+                -11px 11px 5px 10px #faf6e0;
+    }
+    80%{
+        box-shadow: 11px 11px 10px #faf6e0,
+                    -11px -11px 10px #faf6e0,
+                    11px -11px 10px #faf6e0,
+                    -11px 11px 10px #faf6e0;
+    }
+    100%{
+        box-shadow: 13px 13px 10px #faf6e0,
+                    -13px -13px 10px #faf6e0,
+                    13px -13px 10px #faf6e0,
+                    -13px 13px 10px #faf6e0;
+    }
+}
+
+
+.home .image{
+    margin: 50px;
+}
+.home .intro{
+    text-align: center;
+}
+.home .intro .p1{
+    font-size: 25px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home .intro .name{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: white;
+}
+.home .intro button{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: rgb(1, 143, 1);
+    padding: 10px;
+    width: 300px;
+    background: rgba(255, 255, 255,0.1);
+    border: none;
+    border-radius: 15px;
+
+}
+.aboutme{
+   padding: 5% 20%;
+    text-align: center;
+    background: rgba(255, 255, 255,0.1);
+    width: 80%;
+    color: rgb(29, 29, 30);
+    letter-spacing: 1.5;
+    margin: auto;
+}
+.aboutme h1{
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    color: white;
+}
+.aboutme p{
+    text-align-last: left;
+    text-indent: 50px;
+}
+.html,.css,.javascript,.python,.c,.java,.creativity,.communication,.problam{
+    max-width: 300px;
+    height: 7px;
+    background: gray;
+    border-radius: 4px;
+}
+.html p,.css p,.javascript p,.python p,.c p,.java p,.creativity p,.communication p,.problam p{
+    height: 100%;
+    width: 0;
+    margin: 0;
+    border-radius: 4px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+.html p{
+    background: orange;
+    animation-name: htm;
+}
+.css p{
+    background: rgb(0, 183, 255);
+    animation-name: css;
+}
+.javascript p{
+    background: yellow;
+    animation-name: js;
+}
+.python p{
+    background: rgb(47, 255, 0);
+    animation-name: python;
+}
+.c p{
+    background: rgb(81, 0, 255);
+    animation-name: c;
+}
+.java p{
+    background: white;
+    animation-name: java;
+}
+.communication p{
+    background: purple;
+    animation-name: com;
+}
+.problam p{
+    background: purple;
+    animation-name: pro;
+}
+.creativity p{
+    background: purple;
+    animation-name: creat;
+}
+@keyframes htm{
+    0%{
+
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes js{
+    0%{
+
+    }
+    100%{
+        width: 86%;
+    }
+}
+@keyframes python{
+    0%{
+
+    }
+    100%{
+        width: 73%;
+    }
+}
+@keyframes c{
+    0%{
+
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes java{
+    0%{
+
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes creat{
+    0%{
+
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes pro{
+    0%{
+
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes com{
+    0%{
+
+    }
+    100%{
+        width: 80%;
+    }
+}
+.technical{
+    padding: 5% ;
+    background: rgba(26, 25, 25, 0.671);
+    width: 37%;
+    letter-spacing: 1.5;
+    margin: auto;
+    margin-left: 10%;
+    color: white;
+    border-radius: 10px;
+
+
+}
+.sp{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10px;
+    border-bottom: 4px solid white;
+    font-size: 18px;
+}
+.profesinal{
+    padding: 5% ;
+    background: rgba(26, 25, 25, 0.671);
+    width: 37%;
+    letter-spacing: 1.5;
+    margin: auto;
+    margin-top: 0%;
+    margin-right: 10%;
+    border-radius: 10px;
+    color: white;
+}
+.skils{
+    display: flex;
+}
+.h1{
+    text-align: center;
+    color: white;
+    margin: 40%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid white;
+}
+.profesinal p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.technical p{
+    margin-top: 5px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    margin-top:100px;
+    width: 80%;
+    margin: auto;
+}
+.top button{
+    height: 50px;
+    width:50px;
+    font-size: 30px;
+    border-radius: 50%;
+    background: white;
+    opacity:0.1;
+    outline:none;
+    margin: 10px;
+}
+.uppercontener{
+    width: 100%;
+    overflow-x: scroll;
+}
+.contener{
+    width: 100%;
+    display: flex;
+    
+}
+
+.contener img{
+    width:300px ;
+    height: 370px;
+    margin: 15px;
+    border-radius: 60px 0;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255,0.5) 3px 3px 5px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+.contener img:hover{
+    transform: scale(1.1);
+    border-radius:0;
+    filter: opacity(1);
+    
+}
+.uppercontener::-webkit-scrollbar{
+    display:none;
+}
+.contact{
+    display: flex;
+}
+.social-media{
+    margin-left: 10%;
+    width: 35%;
+}
+.PandE{
+    background: white;
+    width: 300px;
+    border-radius: 30px;
+    display: flex;
+    margin: 50px 0;
+}
+.PandE img{
+    height: 30px;
+    width: 30px;
+    margin: 3px 15px;
+}
+.PandE p{
+    margin-top: 7px;
+}
+.email{
+    background: rgba(255, 255, 255,0.1);
+    width: 35%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    height: 400px;
+    border-radius: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.email input{
+    width: 300px;
+    margin: 10px;
+    border: 0.5px solid rgb(239, 233, 233);
+    padding: 10px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    background: transparent;
+}
+.email textarea{
+    width: 300px;
+    margin: 10px;
+    height: 100px;
+    border: 0.5px solid rgb(239, 233, 233);
+    padding: 10px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    background: transparent;
+}
+.email button{
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 15px;
+    margin:50px;
+}
+@media screen and (max-width:570px) {
+    header .name{
+        display: none;
+    }
+    header nav{
+        width 100%;
+    }
+}
